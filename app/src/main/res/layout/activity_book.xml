@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity">
+
+    <ImageView
+        android:id="@+id/imageBook"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnAddToRead"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Add to READ"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddToNotRead"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Add to Not READ"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddToRead"
+        app:layout_constraintStart_toStartOf="@+id/btnAddToRead"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddToRead" />
+
+    <TextView
+        android:id="@+id/ba_txtBookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:hint="Book Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageBook"
+        app:layout_constraintStart_toStartOf="@+id/imageBook"
+        app:layout_constraintTop_toBottomOf="@+id/imageBook" />
+
+    <TextView
+        android:id="@+id/ba_txtAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Author"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ba_txtBookName"
+        app:layout_constraintStart_toStartOf="@id/ba_txtBookName"
+        app:layout_constraintTop_toBottomOf="@+id/ba_txtBookName" />
+
+    <TextView
+        android:id="@+id/ba_txtPages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Pages"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ba_txtAuthor"
+        app:layout_constraintStart_toStartOf="@+id/ba_txtAuthor"
+        app:layout_constraintTop_toBottomOf="@+id/ba_txtAuthor" />
+
+    <TextView
+        android:id="@+id/ba_txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Description"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ba_txtPages"
+        app:layout_constraintStart_toStartOf="@+id/ba_txtPages"
+        app:layout_constraintTop_toBottomOf="@+id/ba_txtPages" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="227dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
